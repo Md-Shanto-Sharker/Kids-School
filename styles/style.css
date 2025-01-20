@@ -1,112 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .quicksand-normal {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 .raleway-normal {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* header styles */
-#header{
-    margin-left: 200px;
-    margin-right: 200px;
+#header {
+  margin: 0 180px;
 }
 /* nav styles */
-.nav-container{
-    display: flex;
-    justify-content: space-between;
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
 }
-.nav-logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.nav {
+  margin-bottom: 50px;
 }
-.nav-heading{
-    font-size: 32px;
-    font-weight: bold;
-    font-family: "Quicksand", serif;
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.list-container{
-    display: flex;
-    align-items: center;
-    
+.nav-heading {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
 }
-.nav-list-link{
-    display: flex;
-    gap: 5rem;
+.list-container {
+  display: flex;
+  align-items: center;
 }
-.nav-list{
-    list-style: none;
-    
+.nav-list-link {
+  display: flex;
+  gap: 5rem;
 }
-.nav-links{
-    text-decoration: none;
+.nav-list {
+  list-style: none;
 }
-.home{
-    color:#FEA301 ;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Quicksand", serif;
+.nav-links {
+  text-decoration: none;
 }
-.about{
-    color:#01ACFD ;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Quicksand", serif;
+.home {
+  color: #fea301;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Quicksand", serif;
 }
-.Facilities{
-    color:#01ACFD ;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Quicksand", serif;
+.about {
+  color: #01acfd;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Quicksand", serif;
 }
-.Admission{
-    color:#5D58EF ;
-    font-weight: bold;
-    font-size: 20px;
-    font-family:"Quicksand", serif;
+.Facilities {
+  color: #01acfd;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Quicksand", serif;
 }
-.btn-container{
-    display: flex;
-    align-items: center;
+.Admission {
+  color: #5d58ef;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Quicksand", serif;
 }
-.nav-btn{
-    text-align: center;
-    width:197px;
-    padding:10px 60px;
-    background-color:#FEA301;
-    border-radius: 12px;
-    border: none;
-    color:#FFFFFF ;
-    font-weight: 600;
-    font-size: 20px;
-    font-family:"Quicksand", serif;
-    display: block;
+.btn-container {
+  display: flex;
+  align-items: center;
 }
-.phone-icon{
+.nav-btn {
+  text-align: center;
+  width: 197px;
+  padding: 10px 60px;
+  background-color: #fea301;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Quicksand", serif;
+  display: block;
+}
+.phone-icon {
+  display: none;
+}
+/* hero section styles */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+}
+.hero-heading-orange {
+  color: #fea301;
+}
+.hero-heading-sky {
+  color: #01acfd;
+}
+.hero-paragraph {
+  font-family: "Quicksand", serif;
+  color: black;
+  font-size: 1.25rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.hero-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 47px;
+  border-radius: 12px;
+  border: none;
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 576px) {
+  .home,
+  .about,
+  .Facilities,
+  .Admission,
+  .nav-btn,
+  .nav-heading {
     display: none;
-}
+  }
+  .phone-icon {
+    display: block;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .nav-logo {
+    margin-top: 12px;
+  }
+  .nav {
+    margin-left: -160px;
+  }
 
-@media screen and (max-width:576px) {
-    .home,.about, .Facilities, .Admission,.nav-btn,.nav-heading{
-        display: none;
-    }
-    .phone-icon{
-        display: block;
-        font-size: 30px;
-        margin-top: 20px;
-    }
-    .nav-logo{
-        margin-top: 12px;
-    }
-    #header{
-        margin-left: 20px;
-    }
+  .body {
+    margin: 0;
+    border: 1px solid #fea301;
+    width: 428px;
+    height: 85px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero-image {
+    width: 336px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
 
+  .hero-description {
+    text-align: center;
+  }
 }
