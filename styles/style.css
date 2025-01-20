@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+.raleway-normal {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* header styles */
+#header{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* nav styles */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.nav-heading{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Quicksand", serif;
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-list-link{
+    display: flex;
+    gap: 5rem;
+}
+.nav-list{
+    list-style: none;
+    
+}
+.nav-links{
+    text-decoration: none;
+}
+.home{
+    color:#FEA301 ;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.about{
+    color:#01ACFD ;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Facilities{
+    color:#01ACFD ;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Admission{
+    color:#5D58EF ;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:"Quicksand", serif;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+}
+.nav-btn{
+    text-align: center;
+    width:197px;
+    padding:10px 60px;
+    background-color:#FEA301;
+    border-radius: 12px;
+    border: none;
+    color:#FFFFFF ;
+    font-weight: 600;
+    font-size: 20px;
+    font-family:"Quicksand", serif;
+    display: block;
+}
+.phone-icon{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .home,.about, .Facilities, .Admission,.nav-btn,.nav-heading{
+        display: none;
+    }
+    .phone-icon{
+        display: block;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .nav-logo{
+        margin-top: 12px;
+    }
+    #header{
+        margin-left: 20px;
+    }
+
+}
