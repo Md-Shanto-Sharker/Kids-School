@@ -139,6 +139,8 @@ body{
 .main{
   margin: 0 140px;
   margin-bottom: 50px;
+  /* background-image: url(../assets/bg.png);
+  background-size: contain; */
 }
 .main-section-heading{
   font-size: 46px;
@@ -172,10 +174,9 @@ body{
 .card-container{
   background-image: linear-gradient(#c9e8f5, #ffffff);
   text-align: center;
-  width: 367.8px;
+  width: 336px;
   padding: 50px ;
   border-radius:18px ;
- 
   box-shadow: 10px 10px rgba(0, 0, 0, 0.171);
   display: flex;
   flex-direction: column;
@@ -192,16 +193,14 @@ body{
 }
 .all-card-container{
   display: flex;
-  justify-content: space-evenly;
-  gap: 100px;
+  justify-content: space-between;
+  
 }
 
 /* break point 0f phone*/
 @media screen and (max-width:576px) {
   #header{
-    /* width:80%; */
-    margin: 0 auto;
-    
+    margin: 0 ;
   }
   .nav{
     width: 100%;
@@ -227,6 +226,10 @@ body{
    .list-container, .nav-heading, .btn-container{
     display: none;
    }
+   .nav-heading {
+    font-size: 15px;
+
+  }
 
    .hero{
     width: 100%;
@@ -251,9 +254,18 @@ body{
   }
 
   /* main section */
-  
+  .main{
+    margin: 0 auto;
+  }
   .main-section-heading{
     font-size: 26px;
+  }
+  .all-card-container{
+   flex-direction: column;
+  }
+  .card-container{
+    width:70%;
+    margin-bottom: 20px;
   }
 
 }
