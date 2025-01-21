@@ -135,7 +135,66 @@ body{
   font-size: 1.25rem;
 }
 
-
+/* main section */
+.main{
+  margin: 0 140px;
+  margin-bottom: 50px;
+}
+.main-section-heading{
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+  text-align: center;
+}
+.card-heading{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+}
+.card-paragraph{
+  font-size: 15px;
+  font-weight:500 ;
+  color: #808080;
+  font-family: "Raleway", serif;
+}
+.card-btn{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+  color: #64C8FF;
+}
+.btn-2nd{
+  color: #F0AA00;
+}
+.btn-3rd{
+  color: #8700FF;
+}
+.card-container{
+  background-image: linear-gradient(#c9e8f5, #ffffff);
+  text-align: center;
+  width: 367.8px;
+  padding: 50px ;
+  border-radius:18px ;
+ 
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card-container-2{
+  background-image: linear-gradient(#FFF4DC, #ffffff);
+  
+}
+.card-container-3{
+  background-image: linear-gradient(#F2E8FF, #ffffff);
+}
+.all-card-container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+}
 
 /* break point 0f phone*/
 @media screen and (max-width:576px) {
@@ -190,4 +249,11 @@ body{
   .hero-btn-container{
     text-align: center;
   }
+
+  /* main section */
+  
+  .main-section-heading{
+    font-size: 26px;
+  }
+
 }
