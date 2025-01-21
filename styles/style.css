@@ -276,7 +276,7 @@ body {
 }
 .children-cards {
   background-image: url(../assets/bg.png), linear-gradient(#ffffff, #dfb670);
-  margin-bottom: 50px;
+
 }
 .content {
   padding: 30px;
@@ -317,6 +317,68 @@ body {
   border: none;
   padding: 5px 15px;
 }
+.hero-btn-container{
+  text-align: center;
+  padding-bottom: 100px;
+ 
+}
+.footer{
+  background-color:#01ACFD ;
+  /* margin: 0 140px; */
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 0px;
+}
+.white{
+  color: white;
+}
+.footer-heading{
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+}
+.footer-paragraph{
+  font-size: 16px;
+  font-family: "Quicksand", serif;
+}
+.footer-image{
+  filter: contrast(200%);
+  height: 85px;
+}
+.footer-heading-2{
+  font-size:24;
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+}
+.footer-heading-3{
+  font-size:26;
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+}
+.list{
+  list-style: none;
+}
+.list-container-2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  margin-left: -30px;
+
+}
+.fb-tw-google{
+  margin-bottom:100px ;
+ 
+}
+
 /* break point 0f phone*/
 @media screen and (max-width: 576px) {
   #header {
@@ -420,5 +482,19 @@ body {
 }
 .story-2-heading{
   font-size: 12px;
+}
+.footer{
+  flex-direction: column;
+  margin: 0;
+  
+}
+.list-container-2{
+  margin-right: 200px;
+}
+.fb-tw-google{
+  margin-right: 120px;
+}
+.google{
+  display: flex;
 }
 }
