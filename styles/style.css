@@ -11,34 +11,28 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
-/* header styles */
-#header {
-  margin: 0 180px;
+body{
+  margin: 0;
 }
-/* nav styles */
 
-.nav-container {
+/* header nav styles */
+#header{
+  margin: 0 140px;
+}
+.nav{
   display: flex;
   justify-content: space-between;
-}
-.nav {
   margin-bottom: 50px;
 }
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.phone-icon{
+  display: none;
 }
 .nav-heading {
   font-size: 32px;
   font-weight: bold;
   font-family: "Quicksand", serif;
 }
-.list-container {
-  display: flex;
-  align-items: center;
-}
+
 .nav-list-link {
   display: flex;
   gap: 5rem;
@@ -46,7 +40,7 @@
 .nav-list {
   list-style: none;
 }
-.nav-links {
+.nav-links{
   text-decoration: none;
 }
 .home {
@@ -73,10 +67,6 @@
   font-size: 20px;
   font-family: "Quicksand", serif;
 }
-.btn-container {
-  display: flex;
-  align-items: center;
-}
 .nav-btn {
   text-align: center;
   width: 197px;
@@ -90,16 +80,26 @@
   font-family: "Quicksand", serif;
   display: block;
 }
-.phone-icon {
-  display: none;
+.nav-logo{
+  display: flex;
+  /* gap: 20px; */
 }
-/* hero section styles */
+.list-container{
+  display: flex;
+  align-items: center;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+}
 
-.hero {
+/* hero section style */
+.hero{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .hero-heading {
   font-size: 3.5rem;
   font-weight: bold;
@@ -128,45 +128,54 @@
   font-weight: bold;
   font-size: 1.25rem;
 }
-@media screen and (max-width: 576px) {
-  .home,
-  .about,
-  .Facilities,
-  .Admission,
-  .nav-btn,
-  .nav-heading {
-    display: none;
-  }
-  .phone-icon {
-    display: block;
-    font-size: 30px;
-    margin-top: 20px;
-  }
-  .nav-logo {
-    margin-top: 12px;
-  }
-  .nav {
-    margin-left: -160px;
-  }
 
-  .body {
+
+
+/* break point 0f phone*/
+@media screen and (max-width:576px) {
+  #header{
+    /* width:80%; */
+    margin: 0 auto;
+    
+  }
+  .nav{
+    width: 100%;
     margin: 0;
-    border: 1px solid #fea301;
-    width: 428px;
-    height: 85px;
+    border-bottom:2px solid #fea301 ;
+    margin-bottom: 50px;
   }
-  .hero {
-    flex-direction: column-reverse;
+  .phone-icon{
+    display: block;
+   font-size: 30px;
+   margin-top: 10px;
+   margin-right: 15px;
   }
-  .hero-image {
-    width: 336px;
+  .nav-img{
+  height:50px;
+  margin-left: 15px;
   }
-  .image-container {
-    display: flex;
-    justify-content: center;
-  }
+   .list-container, .nav-heading, .btn-container{
+    display: none;
+   }
 
-  .hero-description {
+   .hero{
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .hero-image{
+    width: 80%;
+  }
+  .image-container{
+    text-align: center;
+  }
+  .hero-paragraph{
+    text-align: center;
+  }
+  .hero-heading{
+    text-align: center;
+  }
+  .hero-btn-container{
     text-align: center;
   }
 }
