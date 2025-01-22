@@ -271,7 +271,7 @@ body {
 .story-1 {
   background-color: white;
   border-radius: 16px;
-  width: 740px;
+  width: 650px;
   margin-bottom: 50px;
 }
 .story-1 {
@@ -281,20 +281,20 @@ body {
   /* margin-bottom: 500px; */
 
   .image{
-    width: 740px;
+    width: 650px;
   }
 }
 .story-2-5 {
   /* margin-left: 140px;
   margin-right: 140px; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 100px;
+  gap: 10px;
 }
 .all-story{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 140px;
 }
 .image {
@@ -511,6 +511,7 @@ body {
   margin-top: -22px;
 }
 .story-2-5 {
+  margin-left: -130px;
   gap: 10px;
 }
 .story-2-heading{
