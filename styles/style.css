@@ -479,15 +479,12 @@ body {
   }
   .image-2 {
     border-radius: 16px 16px 0 0;
-    width: 100%;
+    /* width: 100%; */
   }
-  .story-2-5 {
-  width: 100%;
-}
   .story-2-heading-div {
     background-color: #ffffff;
     border-radius: 16px;
-    /* width: 160px; */
+   
   }
   .vaiolate {
     font-size: 10px;
@@ -501,13 +498,14 @@ body {
     margin-top: -18px;
   }
   .story-2-5 {
-    /* margin-left: -110px; */
+    margin-left: -110px;
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
-  /* .story-s{
-
-  } */
+  .story-s{
+    width: 290%;
+    
+  }
   .story-2-heading {
     font-size: 12px;
     padding: 15px;
