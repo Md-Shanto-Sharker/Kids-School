@@ -275,7 +275,6 @@ body {
   margin-right: 20px;
 }
 
-
 .image {
   width: 100%;
   border-radius: 16px 16px 0 0;
@@ -467,7 +466,7 @@ body {
     flex-direction: column;
   }
   .card-container {
-    width: 73%;
+    width: 70%;
     margin-bottom: 20px;
     margin-left: 5px;
   }
@@ -484,7 +483,6 @@ body {
   .story-2-heading-div {
     background-color: #ffffff;
     border-radius: 16px;
-   
   }
   .vaiolate {
     font-size: 10px;
@@ -498,13 +496,12 @@ body {
     margin-top: -18px;
   }
   .story-2-5 {
-    margin-left: -110px;
+    margin-left: -120px;
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
-  .story-s{
+  .story-s {
     width: 290%;
-    
   }
   .story-2-heading {
     font-size: 12px;
